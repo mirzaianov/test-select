@@ -1,0 +1,42 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+input,
+textarea {
+  resize: none;
+  outline: none;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: 400;
+
+  &::placeholder {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 400;
+  }
+}
+
+button,
+input[type='submit'],
+input[type='reset'] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
