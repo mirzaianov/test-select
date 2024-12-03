@@ -1,45 +1,48 @@
-![MasterHead](./head.png)
+<!-- ![MasterHead](./head.png) -->
 
-# NAME OF THE PROJECT
+# "Select Component" Test Project
 
 ## Description
 
-### Short description
+### A select React component
 
 ### Features
 
-- Some feature
-- Some feature
-- Some feature
+- Code written in TypeScript
+- Icon, Last Name, First Name, Job Title for each user in the list
+- 50 records downloading from API for user triggered events
+- No third-part libraries except React & TypeScript
 
 ### Dependencies
 
-- `Vite`
-- `React` • `Tailwind`
+1. `Vite`
+2. `React` • `TypeScript`
+3. `API`
 
 ## Installation & Execution
 
 ### Install via Vite:
 
-    npm create vite@latest
-    cd my-project
-    npm install
+```
+  git clone https://github.com/mirzaianov/test-select.git
+  cd test-select
+  npm install
+```
 
 ### Run in the development mode:
 
-    npm run dev
+```
+  npm run dev
+```
 
-Vite will start frontend server on http://localhost:5173/
+Vite will start the frontend server on http://localhost:5173/
 
-## Building and Running for Production
+### Or open the deployed site:
 
-    npm run build
-    npm run preview
-
-Vite will start frontend server on http://localhost:4173/
+<!-- Click [here](!! Add site !!) -->
 
 ## License
 
 ### MIT license
 
-You can use the code, but I ask you do not copy this site without giving me credit.
+You can use the code, but I ask you do not copy this site without giving me credit
