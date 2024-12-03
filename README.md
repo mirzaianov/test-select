@@ -4,7 +4,7 @@
 
 ## Description
 
-### A select React component
+### A custom React select component
 
 ### Features
 
