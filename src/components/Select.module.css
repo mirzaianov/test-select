@@ -1,3 +1,11 @@
 .container {
-  width: min(100%, 300px);
+  position: relative;
+  margin: 5rem auto;
+  max-width: 15.625rem;
+  width: 100%;
+}
+
+.heading {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
 }
