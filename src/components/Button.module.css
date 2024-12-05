@@ -1,0 +1,19 @@
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 2rem;
+  padding: 0rem 0.5rem 0rem 0.75rem;
+  border-radius: 0.25rem;
+  background-color: var(--color-neutral-00);
+  cursor: pointer;
+  border: 0.0625rem solid transparent;
+  transition: border 0.1s ease-in-out;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+}
