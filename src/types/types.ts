@@ -8,8 +8,11 @@ export type User = {
 
 export type UserList = User[];
 
-export type meta = {
-  from: number;
-  to: number;
-  total: number;
+export type Response = {
+  data: UserList;
+  meta: {
+    from: number;
+    to: number;
+    total: number;
+  };
 };
