@@ -1,0 +1,11 @@
+.dropdown {
+  position: relative;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 10.5rem;
+  background-color: var(--color-neutral-00);
+  border-radius: 0.25rem;
+  box-shadow: 0rem 0.625rem 1.875rem 0rem var(--color-primary-55);
+  overflow-y: scroll;
+}
