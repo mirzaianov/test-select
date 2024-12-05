@@ -1,0 +1,9 @@
+.arrow {
+  width: 1rem;
+  height: 1rem;
+}
+
+.arrow > path {
+  width: 0.5625rem;
+  fill: var(--color-text-30);
+}
