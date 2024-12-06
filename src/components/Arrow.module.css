@@ -1,9 +1,13 @@
 .arrow {
   width: 1rem;
   height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.arrow > path {
-  width: 0.5625rem;
+.arrow > svg {
+  width: 0.625rem;
+  height: 0.625rem;
   fill: var(--color-text-30);
 }
