@@ -8,4 +8,17 @@
   border-radius: 0.25rem;
   box-shadow: 0rem 0.625rem 1.875rem 0rem var(--color-primary-55);
   overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 0.125rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 0.25rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--color-neutral-35);
+    border-radius: 0.25rem;
+  }
 }
