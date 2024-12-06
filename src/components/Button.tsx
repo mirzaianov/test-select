@@ -4,13 +4,14 @@ import styles from './Button.module.css';
 
 type ButtonProps = {
   selected: User | null;
+  isActive: boolean;
   onClick: () => void;
 };
 
-export default function Button({ selected, onClick }: ButtonProps) {
+export default function Button({ selected, isActive, onClick }: ButtonProps) {
   return (
     <div
-      className={styles.button}
+      className={`${styles.button} ${isActive ? styles.buttonActive : ''}`}
       onClick={onClick}
     >
       {selected
