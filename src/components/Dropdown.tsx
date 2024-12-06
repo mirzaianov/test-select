@@ -9,6 +9,7 @@ import useElementSize from '../hooks/useElementSize';
 import { throttle } from '../utils/utils';
 import styles from './Dropdown.module.css';
 
+// TODO: Correct types
 type DropdownProps = {
   children: Array<ReactElement>;
   onReachBottom: () => any | (() => Promise<any>);
