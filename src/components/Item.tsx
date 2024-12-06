@@ -3,13 +3,19 @@ import styles from './Item.module.css';
 
 type ItemProps = {
   user: User;
+  isSelected: boolean;
   onClick: () => void;
 };
 
-export default function Item({ user, onClick, ...props }: ItemProps) {
+export default function Item({
+  user,
+  isSelected,
+  onClick,
+  ...props
+}: ItemProps) {
   return (
     <div
-      className={styles.item}
+      className={`${styles.item} ${isSelected ? styles.itemSelected : ''}`}
       onClick={onClick}
       {...props}
     >
