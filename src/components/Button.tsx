@@ -15,7 +15,7 @@ export default function Button({ selected, onClick }: ButtonProps) {
     >
       {selected
         ? `${selected.last_name} ${selected.first_name}, ${selected.job}`
-        : 'LastName First Name, jobTitle'}
+        : 'LastName FirstName, jobTitle'}
       <Arrow />
     </div>
   );
