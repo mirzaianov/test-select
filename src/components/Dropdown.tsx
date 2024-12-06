@@ -41,8 +41,8 @@ export default function Dropdown({ children, onReachBottom }: DropdownProps) {
           position: 'absolute',
           top: (startIndex + index) * ROW_HEIGHT + index * GAP,
           height: ROW_HEIGHT,
-          // left: 0,
-          // right: 0,
+          left: 0,
+          right: 0,
         },
       }),
     );
