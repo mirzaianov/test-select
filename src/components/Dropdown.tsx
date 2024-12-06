@@ -12,6 +12,7 @@ import styles from './Dropdown.module.css';
 // TODO: Correct types
 type DropdownProps = {
   children: Array<ReactElement>;
+  isActive: boolean;
   onReachBottom: () => any | (() => Promise<any>);
 };
 
@@ -19,7 +20,11 @@ const BUFFERED_ITEMS = 4;
 const ROW_HEIGHT = 32;
 const GAP = 4;
 
-export default function Dropdown({ children, onReachBottom }: DropdownProps) {
+export default function Dropdown({
+  children,
+  isActive,
+  onReachBottom,
+}: DropdownProps) {
   const [containerRef, { height: containerHeight }] =
     useElementSize<HTMLDivElement>();
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -73,7 +78,7 @@ export default function Dropdown({ children, onReachBottom }: DropdownProps) {
     <div
       ref={containerRef}
       onScroll={handleScroll}
-      className={styles.dropdown}
+      className={`${styles.dropdown} ${isActive ? styles.dropdownActive : ''}`}
     >
       {visibleChildren}
     </div>

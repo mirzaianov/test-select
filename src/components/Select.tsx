@@ -64,18 +64,20 @@ export default function Select() {
         isActive={isDropdownOpen}
         onClick={() => setIsDropdownOpen((prevState) => !prevState)}
       />
-      {isDropdownOpen && (
-        <Dropdown onReachBottom={fetchUsers}>
-          {users.map((user) => (
-            <Item
-              key={user.id}
-              user={user}
-              isSelected={user.id === selected?.id}
-              onClick={() => handleDropdownItemClick(user)}
-            />
-          ))}
-        </Dropdown>
-      )}
+
+      <Dropdown
+        onReachBottom={fetchUsers}
+        isActive={isDropdownOpen}
+      >
+        {users.map((user) => (
+          <Item
+            key={user.id}
+            user={user}
+            isSelected={user.id === selected?.id}
+            onClick={() => handleDropdownItemClick(user)}
+          />
+        ))}
+      </Dropdown>
     </div>
   );
 }
