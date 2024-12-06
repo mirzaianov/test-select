@@ -55,12 +55,13 @@ export default function Select() {
 
   return (
     <div
-      className={styles.container}
+      className={`${styles.container} ${isDropdownOpen ? styles.containerActive : ''}`}
       ref={outsideClickRef}
     >
       <span className={styles.heading}>Users</span>
       <Button
         selected={selected}
+        isActive={isDropdownOpen}
         onClick={() => setIsDropdownOpen((prevState) => !prevState)}
       />
       {isDropdownOpen && (
@@ -69,6 +70,7 @@ export default function Select() {
             <Item
               key={user.id}
               user={user}
+              isSelected={user.id === selected?.id}
               onClick={() => handleDropdownItemClick(user)}
             />
           ))}

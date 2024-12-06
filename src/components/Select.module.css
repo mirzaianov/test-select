@@ -3,9 +3,14 @@
   margin: 5rem auto;
   max-width: 15.625rem;
   width: 100%;
+  transition: max-width 0.25s ease;
 }
 
 .heading {
   font-size: 0.75rem;
   line-height: 1.25rem;
+}
+
+.containerActive {
+  max-width: 22.5625rem;
 }
