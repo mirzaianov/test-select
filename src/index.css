@@ -6,6 +6,4 @@ body {
   font-family: Poppins, 'Montserrat', system-ui;
   background-color: var(--color-neutral-10);
   color: var(--color-text-30);
-  height: 100vh;
-  height: 100dvh;
 }
