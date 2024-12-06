@@ -17,7 +17,7 @@ type DropdownProps = {
 
 const BUFFERED_ITEMS = 4;
 const ROW_HEIGHT = 32;
-const GAP = 0;
+const GAP = 4;
 
 export default function Dropdown({ children, onReachBottom }: DropdownProps) {
   const [containerRef, { height: containerHeight }] =
@@ -40,7 +40,7 @@ export default function Dropdown({ children, onReachBottom }: DropdownProps) {
         key: index,
         style: {
           position: 'absolute',
-          top: (startIndex + index) * ROW_HEIGHT + index * GAP,
+          top: (startIndex + index) * ROW_HEIGHT + GAP,
           height: ROW_HEIGHT,
           left: 0,
           right: 0,
