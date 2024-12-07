@@ -9,11 +9,10 @@ import useElementSize from '../hooks/useElementSize';
 import { throttle } from '../utils/utils';
 import styles from './Dropdown.module.css';
 
-// TODO: Correct types
 type DropdownProps = {
   children: Array<ReactElement>;
   isActive: boolean;
-  onReachBottom: () => any | (() => Promise<any>);
+  onReachBottom: () => Promise<void>;
 };
 
 const BUFFERED_ITEMS = 50;
