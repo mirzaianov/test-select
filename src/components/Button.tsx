@@ -14,9 +14,11 @@ export default function Button({ selected, isActive, onClick }: ButtonProps) {
       className={`${styles.button} ${isActive ? styles.buttonActive : ''}`}
       onClick={onClick}
     >
-      {selected
-        ? `${selected.last_name} ${selected.first_name}, ${selected.job}`
-        : 'LastName FirstName, jobTitle'}
+      <span className={styles.text}>
+        {selected
+          ? `${selected.last_name} ${selected.first_name}, ${selected.job}`
+          : 'LastName FirstName, jobTitle'}
+      </span>
       <Arrow />
     </div>
   );
