@@ -16,7 +16,7 @@ type DropdownProps = {
   onReachBottom: () => any | (() => Promise<any>);
 };
 
-const BUFFERED_ITEMS = 4;
+const BUFFERED_ITEMS = 50;
 const ROW_HEIGHT = 32;
 const GAP = 4;
 
