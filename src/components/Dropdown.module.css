@@ -11,7 +11,7 @@
   transition: height 0.25s ease-in-out;
 
   &::-webkit-scrollbar {
-    width: 0.125rem;
+    width: 0.3125rem;
   }
 
   &::-webkit-scrollbar-track {
@@ -21,6 +21,11 @@
   &::-webkit-scrollbar-thumb {
     background: var(--color-neutral-35);
     border-radius: 0.25rem;
+    border: 0.09375rem var(--color-neutral-00) solid;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--color-neutral-37);
   }
 }
 
