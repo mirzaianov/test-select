@@ -1,4 +1,4 @@
-<!-- ![MasterHead](./head.png) -->
+![MasterHead](./head.png)
 
 # "Select Component" Test Project
 
