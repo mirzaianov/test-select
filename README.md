@@ -39,7 +39,7 @@ Vite will start the frontend server on http://localhost:5173/
 
 ### Or open the deployed site:
 
-<!-- Click [here](!! Add site !!) -->
+https://select-mirzaianov.vercel.app/
 
 ## License
 
